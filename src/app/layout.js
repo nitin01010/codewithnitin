@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
       <body className={ inter.className }>
         <Head>
           <meta name="google-adsense-account" content="ca-pub-8460040938315147" />
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8460040938315147"
+            crossorigin="anonymous"></script>
         </Head>
         <Navigation />
         { children }

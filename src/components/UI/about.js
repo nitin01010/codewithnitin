@@ -29,7 +29,7 @@ const About = () => {
                 <h1>Location  gurgaon cyber city</h1>
                 <h1>duration  6 Months</h1>
             </div>
-            <p className=' text-center p-2'>Hey Help : codewithnitin8855@gmail.com</p>
+            <p className=' text-center p-2'>any Help : codewithnitin8855@gmail.com</p>
         </div >
     )
 }
