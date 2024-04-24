@@ -8,7 +8,9 @@ export default function Home() {
         {
           Post.map((ItemPost) => {
             return (
-              <Card data={ ItemPost } />
+              <div key={ ItemPost.id }>
+                <Card data={ ItemPost } />
+              </div>
             )
           })
         }
