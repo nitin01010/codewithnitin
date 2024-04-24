@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "antd": "^5.16.4",
     "axios": "^1.6.8",
     "lucide-react": "^0.372.0",
