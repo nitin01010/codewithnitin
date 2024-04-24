@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ inter.className }>
-
+        <Head>
+          <meta name="google-adsense-account" content="ca-pub-8460040938315147" />
+        </Head>
         <Navigation />
         { children }
         <SpeedInsights />
