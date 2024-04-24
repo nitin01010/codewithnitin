@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#sidebarMenu{
+    background-color:white;
+    color: black;
+    left: 0px;
+    display: block;
+    width: 360px;
+    height: 90vh;
+    position: absolute;
+    top:71px;
+    transition: ease-in-out 0.40s;
+   /* transform: translateX(-250px);  */
+   transform: translateX(-390px); 
+
+}
+.Item{
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Item:hover{
+    background-color:#f2f2f2;
+    color: black;
+    padding: 10px;
+    box-shadow: #f2f2f2;
+    transition: ease-in-out 0.40s;
+}
+#openSideBar:checked ~ #sidebarMenu{
+   transform: translateX(0px); 
+}
