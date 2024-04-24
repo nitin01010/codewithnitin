@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/UI/nav";
 import Footer from "@/components/UI/footer";
 import { Analytics } from '@vercel/analytics/react';
-import { injectSpeedInsights } from "@vercel/speed-insights/*";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={ inter.className }>
         <Navigation />
         { children }
-        <injectSpeedInsights />
+        <SpeedInsights />
         <Analytics />
         <Footer />
       </body>
