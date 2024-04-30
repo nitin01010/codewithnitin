@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const HeroSection = () => {
     return (
@@ -10,19 +11,23 @@ const HeroSection = () => {
                 </h1>
                 <h1 className=' text-lg'>Learn Web |</h1>
                 <p className=' text-start mt-7 '>
-                    Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
+                    Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Nitin is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
                 </p>
                 <div className='  flex gap-4 mt-6'>
-                    <button
-                        type="button"
-                        class=" bg-blue-600 p-3 rounded mt-4 text-white shadow-lg w-[200px]">
-                        Free Courses
-                    </button>
-                    <button
-                        type="button"
-                        class=" bg-slate-100 p-3 rounded mt-4 text-black shadow hover:bg-slate-300 w-[200px]">
-                        Explore Blog
-                    </button>
+                    <Link href={ '/blog' }>
+                        <button
+                            type="button"
+                            class=" bg-blue-600 p-3 rounded mt-4 text-white shadow-lg w-[150px]">
+                            Free Courses
+                        </button>
+                    </Link>
+                    <Link href={ '/blog' }>
+                        <button
+                            type="button"
+                            class=" bg-slate-100 p-3 rounded mt-4 text-black shadow hover:bg-slate-300 w-[180px]">
+                            Explore Blog
+                        </button>
+                    </Link>
                 </div>
             </div>
             <Image src={ '/HeroSection.jpg' } className='  object-none  sm:w-2/4   rounded-xl' width={ 400 } height={ 200 } />

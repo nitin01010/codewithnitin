@@ -9,7 +9,7 @@ export default function Home() {
         <HeroSection />
 
         <h1 className=" font-semibold text-2xl">Recommended Courses</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 p-3 gap-4">
           {
             Post.map((ItemPost) => {
               return (
