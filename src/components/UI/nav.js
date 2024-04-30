@@ -8,7 +8,7 @@ const Navigation = () => {
     const [statusBar, setStatusBar] = useState(true);
     return (
         <div>
-            <div className=' bg-white border border-b-1 flex justify-center md:justify-between  items-center p-4 h-[70px]'>
+            <div className=' bg-white border border-b-1  flex justify-center md:justify-between  items-center p-4 h-[70px]'>
                 <Link href={ '/' }>
                     <h1 className=' text-purple-600 font-semibold text-xl capitalize'>&lt;/&gt; CodeWithNitin</h1>
                 </Link>
@@ -16,9 +16,7 @@ const Navigation = () => {
                     statusBar ? <Menu className=' absolute right-5 sm:hidden cursor-pointer ' onClick={ () => setStatusBar(!statusBar) } /> : <X className=' absolute right-5 sm:hidden cursor-pointer ' onClick={ () => setStatusBar(!statusBar) } />
                 }
 
-
-
-                <ul className='   hidden md:flex gap-10 capitalize  '>
+                <ul className='   hidden md:flex font-semibold gap-10 capitalize  '>
                     <li className=' cursor-pointer  hover:text-purple-600'><Link href={ '/' } />Home</li>
                     <li className=' cursor-pointer  hover:text-purple-600'><Link href={ '' } />Blog</li>
                     <li className=' cursor-pointer  hover:text-purple-600'><Link href={ '' } />Contact</li>
