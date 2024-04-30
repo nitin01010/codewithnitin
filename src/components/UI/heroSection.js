@@ -30,7 +30,7 @@ const HeroSection = () => {
                     </Link>
                 </div>
             </div>
-            <Image src={ '/HeroSection.jpg' } className='  object-none  sm:w-2/4   rounded-xl' width={ 400 } height={ 200 } />
+            <Image src={ '/heroSection.jpg' } className='  object-none  sm:w-2/4 h-1/4   rounded-xl' width={ 400 } height={ 200 } />
         </div>
     )
 }

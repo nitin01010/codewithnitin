@@ -24,11 +24,6 @@ const Navigation = () => {
             path: '/Contact',
             pathName: 'Contact'
         },
-        {
-            id: 4,
-            path: '/myGear',
-            pathName: 'My Gear'
-        },
     ]
     const Subject = [
         {
@@ -52,13 +47,13 @@ const Navigation = () => {
         <div>
             <div className=' bg-white border border-b-1  flex justify-center md:justify-between  items-center p-4 h-[70px]'>
                 <Link href={ '/' }>
-                    <h1 className=' text-purple-600 font-semibold text-xl capitalize'>&lt;/&gt; CodeWithNitin</h1>
+                    <h1 className=' text-purple-600  text-xl font-semibold uppercase '>&lt;/&gt; CodeWithNitin</h1>
                 </Link>
                 {
                     statusBar ? <Menu className=' absolute right-5 sm:hidden cursor-pointer ' onClick={ () => setStatusBar(!statusBar) } /> : <X className=' absolute right-5 sm:hidden cursor-pointer ' onClick={ () => setStatusBar(!statusBar) } />
                 }
 
-                <ul className='   hidden md:flex font-semibold gap-10 capitalize  '>
+                <ul className='   hidden md:flex  gap-10 uppercase  '>
                     {
                         PathList?.map((itemPath) => {
                             return <li key={ itemPath.id } className=' cursor-pointer text-black  hover:text-purple-600' onClick={ () => router.push(itemPath.path) }>{ itemPath.pathName }</li>
@@ -67,8 +62,8 @@ const Navigation = () => {
                 </ul>
 
             </div >
-            <div className=' bg-white border hidden sm:flex border-b-1  justify-center  items-center p-3 h-[60px]'>
-                <ul className='flex gap-16 font-bold'>
+            <div className=' bg-white border hidden sm:flex uppercase border-b-1  justify-center  items-center p-3 h-[60px]'>
+                <ul className='flex gap-16 '>
                     {
                         Subject?.map((item) => {
                             return <li key={ item.id } className=' cursor-pointer text-purple-600'>{ item.subject }</li>
