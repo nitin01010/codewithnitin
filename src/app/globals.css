@@ -37,3 +37,4 @@
 #openSideBar:checked ~ #sidebarMenu{
    transform: translateX(0px); 
 }
+

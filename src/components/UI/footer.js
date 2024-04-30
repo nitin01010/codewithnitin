@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer
-            className="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white">
+            className="flex flex-col items-center bg-black   text-black text-center text-surface">
             <div className="container pt-9">
                 <div className="mb-6 flex justify-center space-x-2">
 
@@ -11,7 +11,7 @@ const Footer = () => {
                         href="https://twitter.com/nitin_0202"
                         target='_bl'
                         type="button"
-                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out bg-purple-600 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                         data-twe-ripple-init>
                         <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                             <svg
@@ -30,7 +30,7 @@ const Footer = () => {
                         href="https://www.instagram.com/nitin.0202/"
                         target='_bl'
                         type="button"
-                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out bg-purple-700 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                         data-twe-ripple-init>
                         <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                             <svg
@@ -47,7 +47,7 @@ const Footer = () => {
                         href="https://www.linkedin.com/in/nitin0202/"
                         target='_bl'
                         type="button"
-                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out bg-purple-600 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                         data-twe-ripple-init>
                         <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                             <svg
@@ -64,7 +64,7 @@ const Footer = () => {
                         href="https://github.com/nitin01010"
                         type="button"
                         target='_bl'
-                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                        className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out bg-purple-600 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                         data-twe-ripple-init>
                         <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                             <svg
@@ -79,7 +79,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-full bg-black/5 p-4 text-center">
+            <div className="w-full bg-black p-4 text-white text-center">
                 © 2023 Copyright |
                 <a href="https://codewithnitin.xyz/"> Code /:</a>
             </div>
