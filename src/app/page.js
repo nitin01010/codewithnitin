@@ -3,12 +3,12 @@ import JavaScript from "@/../public/JavaScript.png";
 import ReactJSImg from "@/../public/React.png";
 import NextJsImg from "@/../public/NexJs.png";
 
-
 const Carousel = ({ name, color, imgUrl }) => {
   return (
-    <div className=" p-1 rounded-xl min-w-[300px]  h-[220px]" style={ { backgroundColor: `#${color}` } }>
-      <img src={ imgUrl.src } className="object-cover ml-6 mt-11   " alt="Placeholder" />
-      <h1 className=" ml-6 mt-2  font-bold text-3xl text-black">{ name }</h1>
+    <div className="p-1 rounded-xl min-w-[300px] h-[220px]" style={ { backgroundColor: `#${color}` } }>
+      {/* Directly reference the image path from the public directory */ }
+      <img src={ imgUrl } className="object-cover ml-6 mt-11" alt="Placeholder" />
+      <h1 className="ml-6 mt-2 font-bold text-3xl text-black">{ name }</h1>
     </div>
   )
 }
@@ -51,9 +51,9 @@ export default function Home() {
             frontend</p>
         </div>
         <div className="p-2 w-[100%] flex gap-10 overflow-x-scroll" id="Hidde">
-          <Carousel name={ "JavaScript" } color={ 'C3C99E' } imgUrl={ JavaScript } />
-          <Carousel name={ "React" } color={ '7D9CA5' } imgUrl={ ReactJSImg } />
-          <Carousel name={ "Next.js" } color={ 'C2C2C2' } imgUrl={ NextJsImg } />
+          <Carousel name="JavaScript" color="C3C99E" imgUrl="/JavaScript.png" />
+          <Carousel name="React" color="7D9CA5" imgUrl="/React.png" />
+          <Carousel name="Next.js" color="C2C2C2" imgUrl="/NexJs.png" />
         </div>
       </div>
 
