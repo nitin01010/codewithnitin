@@ -1,7 +1,7 @@
 import HeroSection from "@/components/UI/heroSection";
-import JavaScript from "@/../public/JavaScript.png";
 import ReactJSImg from "@/../public/React.png";
 import NextJsImg from "@/../public/NexJs.png";
+import JavaScript from "@/../public/Javascript.png";
 
 const Carousel = ({ name, color, imgUrl }) => {
   return (
