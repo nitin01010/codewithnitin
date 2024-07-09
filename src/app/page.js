@@ -51,7 +51,7 @@ export default function Home() {
             frontend</p>
         </div>
         <div className="p-2 w-[100%] flex gap-10 overflow-x-scroll" id="Hidde">
-          <Carousel name="JavaScript" color="C3C99E" imgUrl="/JavaScript.png" />
+          <Carousel name="JavaScript" color="C3C99E" imgUrl="https://raw.githubusercontent.com/nitin01010/codewithnitin/main/public/Javascript.png" />
           <Carousel name="React" color="7D9CA5" imgUrl="/React.png" />
           <Carousel name="Next.js" color="C2C2C2" imgUrl="/NexJs.png" />
         </div>
