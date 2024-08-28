@@ -28,6 +28,36 @@ const JobComponents = () => {
     )
 }
 
+const JobComponents2 = () => {
+    return (
+        <div className=' bg-[#131313] rounded-lg shadow-2xl  flex flex-wrap md:flex-nowrap gap-5 p-2'>
+            <div className='p-3 w-[100%] md:w-[30%]'>
+                <h1 className=' text-lg font-bold'>Frontend Developer</h1>
+                <div class="grid grid-cols-2 gap-1 mt-3">
+                    <p>June 2024</p>
+                    <p>Present</p>
+                </div>
+                <p className=' mt-3'>Noida sector 142</p>
+
+            </div>
+            <div className='w-[100%] p-3 md:w-[70%]'>
+                <h1 className='text-lg text-purple-400 font-semibold mb-4'>Minecart</h1>
+                <p>
+                    Developed and maintained user interfaces in React.js, ensuring seamless integration with RESTful APIs. Collaborated with the team on code reviews to maintain high-quality standards and ensure smooth functionality. Utilized version control with Git to manage and track code changes.
+                </p>
+                <br />
+                <ul>
+                    <li>1. Designed and implemented responsive UI components based on Figma designs, ensuring compatibility across various devices and screen sizes.</li>
+                    <li>2. Conducted thorough code reviews with the team to identify and resolve issues, enhance performance, and adhere to best practices.</li>
+                    <li>3. Developed and integrated upcoming features into the existing application, contributing to the overall enhancement of user experience.</li>
+                    <li>4. Integrated and managed RESTful APIs to ensure seamless data exchange between the frontend and backend systems.</li>
+                    <li>5. Maintained and organized a codebase consisting of over 100,000 lines of code, ensuring proper folder structure and documentation for ease of maintenance and scalability.</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
 const Education = () => {
     return (
         <div className=' text-white  p-1 w-[100%] md:w-[68%] mt-16 py-2 m-auto'>
@@ -39,8 +69,13 @@ const Education = () => {
             </div>
 
             <div className=' mt-12'>
+                <JobComponents2 />
+            </div>
+
+            <div className=' mt-12'>
                 <JobComponents />
             </div>
+
 
         </div>
     )

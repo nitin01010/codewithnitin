@@ -2,6 +2,7 @@ import HeroSection from "@/components/UI/heroSection";
 import ReactJSImg from "@/../public/React.png";
 import NextJsImg from "@/../public/NexJs.png";
 import JavaScript from "@/../public/Javascript.png";
+import logomy from "@/../public/logomy.jpg";
 
 const Carousel = ({ name, color, imgUrl }) => {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
     <main>
       <div className="p-1 transition ease-linear flex w-[95%] lg:w-[75%] flex-wrap items-center flex-col-reverse  lg:flex-row lg:flex-nowrap justify-center  text-white mt-5 m-auto">
         <HeroSection />
-        <img src="https://media.licdn.com/dms/image/D5635AQHMUA-UI2awJA/profile-framedphoto-shrink_200_200/0/1720000252404?e=1721052000&v=beta&t=dp6SO7jel6fAi6J4IZ0xOLSbigDVueRpfYLnnTjuvSU" className=" object-cover rounded-full  h-64   " alt="Placeholder" />
+        <img src={ logomy.src } className=" object-cover rounded-full w-[80%] md:-[40%] h-[344px]   " alt="My Logo" />
       </div>
 
       <div className=" text-white mt-[10%] flex relative w-[100%] md:w-[77%] flex-wrap md:flex-nowrap m-auto ">
