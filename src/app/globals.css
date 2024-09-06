@@ -2,43 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
 
-#Hidde::-webkit-scrollbar{
+#Hidde::-webkit-scrollbar {
     display: none;
 }
 
-#sidebarMenu{
-    background-color:white;
+#sidebarMenu {
+    background-color: white;
     color: black;
     left: 0px;
     display: block;
     width: 360px;
     height: 90vh;
     position: absolute;
-    top:71px;
+    top: 71px;
     transition: ease-in-out 0.40s;
-   /* transform: translateX(-250px);  */
-   transform: translateX(-390px); 
+    /* transform: translateX(-250px);  */
+    transform: translateX(-390px);
 
 }
-.Item{
+
+.Item {
     padding: 10px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.Item:hover{
-    background-color:#f2f2f2;
+
+.Item:hover {
+    background-color: #f2f2f2;
     color: black;
     padding: 10px;
     box-shadow: #f2f2f2;
     transition: ease-in-out 0.40s;
 }
-#openSideBar:checked ~ #sidebarMenu{
-   transform: translateX(0px); 
+
+#openSideBar:checked~#sidebarMenu {
+    transform: translateX(0px);
 }
 
+
+/* Custom CSS for animations */
+@keyframes moveAbout {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes moveMe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.scroll-animation-about {
+    animation: moveAbout 10s ease-out forwards;
+}
+
+.scroll-animation-me {
+    animation: moveMe 10s ease-out forwards;
+}
+
+/* styles.css */
+@keyframes float {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(100px) translateY(100px);
+    }
+
+    50% {
+        transform: translateX(0) translateY(100px);
+    }
+
+    75% {
+        transform: translateX(-100px) translateY(0);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-gradient-to-r {
+    background-size: 200% 200%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+.animate-icon {
+    animation: float 3s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.bg-animation {
+    background: linear-gradient(to right, #000000, #171717, #4c4c4c);
+    background-size: 200% 100%;
+    animation: backgroundAnimation 6s ease infinite;
+}

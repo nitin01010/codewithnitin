@@ -1,20 +1,19 @@
-import { Github, Mail, Linkedin } from 'lucide-react';
+"use client";
 
+import { Github, Mail, Linkedin } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 const Navigation = () => {
+    const router = useRouter();
     return (
         <div className=" flex  justify-evenly items-center p-1 text-white w-[95%]  md:w-[622px] h-[70px] bg-[#211F23] rounded-full   m-auto mt-5  ">
-            <p className=' cursor-pointer'>
-                <a href="/">Home</a>
+            <p className=' cursor-pointer' onClick={ () => router.push("/") }>
+                Home
             </p>
-            <p className=' cursor-pointer'>
-                <a href='/experience'>
-                    experience
-                </a>
+            <p className=' cursor-pointer' onClick={ () => router.push("/experience") }>
+                experience
             </p>
-            <p className=' cursor-pointer'>
-                <a href='/education'>
-                    education
-                </a>
+            <p className=' cursor-pointer' onClick={ () => router.push("/education") }>
+                education
             </p>
 
 

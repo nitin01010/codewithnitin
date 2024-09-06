@@ -3,6 +3,7 @@ import ReactJSImg from "@/../public/React.png";
 import NextJsImg from "@/../public/NexJs.png";
 import JavaScript from "@/../public/Javascript.png";
 import logomy from "@/../public/logomy.jpg";
+import ModalBox from "@/components/UI/modalBox";
 
 const Carousel = ({ name, color, imgUrl }) => {
   return (
@@ -16,7 +17,7 @@ const Carousel = ({ name, color, imgUrl }) => {
 
 const SkillSection = ({ data }) => {
   return (
-    <div className=" border-slate-800  min-w-[300px]    border p-4 w-[400px] md:w-[305px] rounded-md">
+    <div className=" border-slate-800 min-w-[300px]    border p-4 w-[400px] md:w-[305px] rounded-md">
       <h1 className=" text-2xl font-semibold ">{ data.title }</h1>
       <br />
       <div className="flex flex-col  gap-2">
@@ -34,12 +35,10 @@ const SkillSection = ({ data }) => {
   )
 }
 
-
-
 export default function Home() {
   return (
-    <main>
-      <div className="p-1 transition ease-linear flex w-[95%] lg:w-[75%] flex-wrap items-center flex-col-reverse  lg:flex-row lg:flex-nowrap justify-center  text-white mt-5 m-auto">
+    <main className=" relative">
+      <div className="p-1  transition ease-linear flex w-[95%] lg:w-[75%] flex-wrap items-center flex-col-reverse  lg:flex-row lg:flex-nowrap justify-center  text-white mt-5 m-auto">
         <HeroSection />
         <img src={ logomy.src } className=" object-cover rounded-full w-[80%] md:-[40%] h-[344px]   " alt="My Logo" />
       </div>
@@ -64,8 +63,6 @@ export default function Home() {
         <h1 className=" text-4xl font-bold text-[#6104D6]">Coffee</h1>
       </div>
 
-
-
       <div className=" py-4 p-4 flex flex-col gap-10 justify-start  mt-[7%] w-[95%] lg:w-[75%] m-auto text-white">
         <p className=" text-2xl md:text-4xl">These are the <br />
           technologies I’ve been using</p>
@@ -78,6 +75,7 @@ export default function Home() {
         <SkillSection data={ { title: 'Tools', skills: ['Figma', 'Jira', 'chatGPT', 'MUI', 'Ant Desing', 'Chakra UI'] } } />
       </div>
 
+      <ModalBox />
 
     </main>
   );
