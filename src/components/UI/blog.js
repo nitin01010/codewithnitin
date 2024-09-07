@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 const Blog = async () => {
-    const res = await axios("/api/blog");
+    const res = await axios("https://codewithnitin-git-main-nitin01010s-projects.vercel.app/api/blog");
     const { allPost: posts } = res.data;
     return (
         <div className='w-[95%] lg:w-[75%] m-auto rounded bg-transparent'>
