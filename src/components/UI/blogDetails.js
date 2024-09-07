@@ -28,22 +28,22 @@ const BlogDetails = ({ postId }) => {
     const formattedDate = `${date.getDate()} ${date.toLocaleString('en-US', { month: 'short' })}, ${date.getFullYear().toString().slice(-2)}`;
 
     return (
-        <div className='bg-white rounded-t-lg p-1 w-[95%] lg:w-[75%] m-auto rounded bg-transparent'>
+        <div className=' rounded-t-lg p-1 w-[95%] lg:w-[75%] m-auto rounded bg-transparent'>
             <img
                 src={ data.poster }
                 className="object-cover rounded-t-lg w-[100%] h-[300px] md:h-[400px] lg:h-[600px]"
                 alt="Blog"
             />
-            <div className='bg-[#f2f2f2] p-2 relative'>
-                <h1 className='mt-3 font-bold text-2xl capitalize'>
+            <div className=' text-white p-2  relative'>
+                <h1 className=' font-bold text-2xl capitalize'>
                     <b>{ data.title }</b>
                 </h1>
-                <div className='p-1 gap-5 py-2 absolute top-8 right-2 flex'>
+                <br />
+                <div className='p-1 gap-5 mb-2   flex flex-wrap  justify-end  '>
                     <p className='font-bold uppercase'><b>{ data.Category }</b></p>
                     <div className='w-[1px] rounded bg-orange-400 h-[24px] p-1'></div>
                     <p className='font-bold uppercase'><b>{ formattedDate }</b></p>
                 </div>
-                <br />
                 <p>{ data.contente }</p>
             </div>
         </div>
