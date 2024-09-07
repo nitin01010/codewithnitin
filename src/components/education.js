@@ -1,5 +1,4 @@
 import React from 'react'
-
 const EducationComponents = () => {
     return (
         <div className=' bg-[#131313] text-white rounded-lg shadow-2xl  flex flex-wrap md:flex-nowrap gap-5 p-2'>
@@ -21,5 +20,4 @@ const EducationComponents = () => {
         </div>
     )
 }
-
 export default EducationComponents
