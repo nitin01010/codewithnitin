@@ -1,7 +1,10 @@
 // app/api/contact/route.js
 
+import { dbConnect } from '@/app/lib/db';
 import Contact from '@/module/contact';
 import { NextResponse } from 'next/server';
+
+dbConnect();
 
 export async function POST(request) {
     try {
